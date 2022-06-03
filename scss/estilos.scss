@@ -6,7 +6,6 @@
 .contain {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     font-family: 'Satoshi';
 
 
@@ -35,16 +34,12 @@
 
             width: 100%;
             height: 387px;
-            /* height: 280px; */
             background-image: url(../Assets/background-mobile.png);
-            /* background-size: contain; */
             background-repeat: no-repeat;
             background-position: center;
 
             /* tablet mediaQuery */
             @media(min-width:735px) {
-                /* width: 685px; */
-                /*   width: 100%; */
                 background-size: auto 93%;
                 height: 500px;
                 background-image: url(../Assets/background.png);
@@ -90,24 +85,18 @@
                 /* lista articulos */
                 .listArticle {
                     display: flex;
-                 /*    justify-content: center; */
                     width: 345px;
                     height: 330px;
                     padding: 10px 0 40px 0px;
 
 
-                  /*   @media(max-width:1069px){
-                        .listArticleOculto{
-                           
-                        }
-                    } */
                     /* Desktop */
-                   @media(min-width:1069px){
-                   
-                         width: 520px;
-                         height: 430px;
-                         align-items: center;
-                   }
+                    @media(min-width:1069px) {
+
+                        width: 520px;
+                        height: 430px;
+                        align-items: center;
+                    }
 
                 }
 
@@ -117,35 +106,35 @@
                     padding-left: 60px;
                     display: flex;
                     flex-direction: column;
-                  /*   justify-content: space-around; */
 
-                  /* Desktop */
-                  @media(min-width:1069px){
-                      width: 100%;
-                      .contineLista{
-                          display: flex;
-                          flex-direction: row;
+                    /* Desktop */
+                    @media(min-width:1069px) {
+                        width: 100%;
 
-                          .rigth{
-                              padding-left: 50px;
-                          }
-                      }
-                    /* flex-direction: row; */
-                  } 
-                 
-                     a{
-                         text-decoration: none;
-                         color: #1D1D1F;
-                     }
+                        .contineLista {
+                            display: flex;
+                            flex-direction: row;
+
+                            .rigth {
+                                padding-left: 50px;
+                            }
+                        }
+
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #1D1D1F;
+                    }
 
                     .article {
                         display: flex;
                         align-items: center;
                         margin-bottom: 20px;
 
-                        @media(min-width:1069px){
+                        @media(min-width:1069px) {
                             margin-top: 20px;
-margin-bottom: 40px;
+                            margin-bottom: 40px;
                         }
 
                         .campoProd {
@@ -172,8 +161,9 @@ margin-bottom: 40px;
 
 
             }
+
             /* Desktop */
-            @media(min-width:1069px){
+            @media(min-width:1069px) {
                 height: 620px;
             }
 
@@ -294,7 +284,7 @@ margin-bottom: 40px;
                 height: 418px;
             }
 
-          
+
 
             .segundaSeccion {
                 display: flex;
@@ -330,8 +320,9 @@ margin-bottom: 40px;
             width: 1029px;
 
         }
-          /* Desptop2 */
-          @media(min-width:1440px) {
+
+        /* Desptop2 */
+        @media(min-width:1440px) {
             width: 1140px;
         }
 
@@ -349,8 +340,7 @@ margin-bottom: 40px;
         @media(min-width:735px) {
             .titleProductos {
                 display: none;
-                /*  margin-top: 40px;
-                font-size: 28px; */
+               
             }
 
         }
@@ -418,8 +408,8 @@ margin-bottom: 40px;
                 }
 
                 /* Desktop2 */
-                @media(min-width:1440px){
-                      width: 255px;
+                @media(min-width:1440px) {
+                    width: 255px;
                 }
 
                 summary {
