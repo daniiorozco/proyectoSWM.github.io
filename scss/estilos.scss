@@ -90,7 +90,7 @@
                 /* lista articulos */
                 .listArticle {
                     display: flex;
-                    justify-content: center;
+                 /*    justify-content: center; */
                     width: 345px;
                     height: 330px;
                     padding: 10px 0 40px 0px;
@@ -106,6 +106,7 @@
                    
                          width: 520px;
                          height: 430px;
+                         align-items: center;
                    }
 
                 }
@@ -113,10 +114,24 @@
                 .listArticle ul {
                     width: 220px;
                     list-style: none;
+                    padding-left: 60px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
+                  /*   justify-content: space-around; */
 
+                  /* Desktop */
+                  @media(min-width:1069px){
+                      width: 100%;
+                      .contineLista{
+                          display: flex;
+                          flex-direction: row;
+
+                          .rigth{
+                              padding-left: 50px;
+                          }
+                      }
+                    /* flex-direction: row; */
+                  } 
                  
                      a{
                          text-decoration: none;
@@ -126,6 +141,12 @@
                     .article {
                         display: flex;
                         align-items: center;
+                        margin-bottom: 20px;
+
+                        @media(min-width:1069px){
+                            margin-top: 20px;
+margin-bottom: 40px;
+                        }
 
                         .campoProd {
                             margin-left: 20px;

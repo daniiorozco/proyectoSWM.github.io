@@ -74,7 +74,7 @@
       @media (min-width: 735px) {
           .contain .cabecera .image .listArticle {
             display: flex;
-            justify-content: center;
+            /*    justify-content: center; */
             width: 345px;
             height: 330px;
             padding: 10px 0 40px 0px;
@@ -87,21 +87,40 @@
     @media (min-width: 735px) and (min-width: 1069px) {
       .contain .cabecera .image .listArticle {
         width: 520px;
-        height: 430px; } }
+        height: 430px;
+        align-items: center; } }
       @media (min-width: 735px) {
           .contain .cabecera .image .listArticle ul {
             width: 220px;
             list-style: none;
+            padding-left: 60px;
             display: flex;
             flex-direction: column;
-            justify-content: space-around; }
+            /*   justify-content: space-around; */
+            /* Desktop */ } }
+    @media (min-width: 735px) and (min-width: 1069px) {
+      .contain .cabecera .image .listArticle ul {
+        width: 100%;
+        /* flex-direction: row; */ }
+        .contain .cabecera .image .listArticle ul .contineLista {
+          display: flex;
+          flex-direction: row; }
+          .contain .cabecera .image .listArticle ul .contineLista .rigth {
+            padding-left: 50px; } }
+      @media (min-width: 735px) {
             .contain .cabecera .image .listArticle ul a {
               text-decoration: none;
               color: #1D1D1F; }
             .contain .cabecera .image .listArticle ul .article {
               display: flex;
               align-items: center;
-              /* iconos */ }
+              margin-bottom: 20px;
+              /* iconos */ } }
+      @media (min-width: 735px) and (min-width: 1069px) {
+        .contain .cabecera .image .listArticle ul .article {
+          margin-top: 20px;
+          margin-bottom: 40px; } }
+      @media (min-width: 735px) {
               .contain .cabecera .image .listArticle ul .article .campoProd {
                 margin-left: 20px; }
               .contain .cabecera .image .listArticle ul .article .imgProducto {
