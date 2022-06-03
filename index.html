@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -18,17 +18,23 @@
             <h1 class="title">What's in the box</h1>
             <div class="image">
                 <div class="secondTitle">
-                    <h1 class="titleTwo">What's in the box <span class="titleGris">Tech Specs</span></h1> <img
-                        src="./Assets/What's in the box/Icons/switch/arrow-double.svg" alt="">
+                  <a name="whatsinthebox"><h1 class="titleTwo">What's in the box <span class="titleGris">Tech Specs</span></h1></a>  
+                       <a href="#techSpech"><img src="./Assets/What's in the box/Icons/switch/arrow-double.svg" alt="arrow bot"></a>     
                 </div>
                <!-- lista -->
                 <div class="listArticle">
                     <ul>
-                        <li><img src="./Assets/What's in the box/Icons/faro.fill.svg" alt="imagen casco"> FARO Helmet</li>
-                        <li><img src="./Assets/What's in the box/Icons/umanual.filll.svg" alt="imagen manual"> User manual</li>
-                        <li><img src="./Assets/What's in the box/Icons/navremote.fill.svg" alt="imagen navegacion"> Navigation Remote</li>
-                        <li><img src="./Assets/What's in the box/Icons/rubberbands.fill.svg" alt="imagen rubberbands"> Rubber bands</li>
-                        <li><img src="./Assets/What's in the box/Icons/usb-c.fill.svg" alt=""> USB Type-C Charging Cable</li>
+                     <div class="listArticleOculto"> 
+                        <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/faro.fill.svg" alt="imagen casco"><a href="#techSpech"><li class="campoProd"> FARO Helmet</li></a> </div>  
+                        <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/umanual.filll.svg" alt="imagen manual"><a href="#techSpech"> <li class="campoProd"> User manual</li></a></div>   
+                    </div>
+                    
+                    <div class="listArticleOculto">
+                        <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/navremote.fill.svg" alt="imagen navegacion"><a href="#techSpech"><li class="campoProd"> Navigation Remote</li></a> </div> 
+                       <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/rubberbands.fill.svg" alt="imagen rubberbands"><a href="#techSpech"> <li class="campoProd"> Rubber bands</li></a></div>                       
+                 </div>  
+                       <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/usb-c.fill.svg" alt="imagen usb"><a href="#techSpech"><li class="campoProd"> USB Type-C Charging Cable</li></a> </div>  
+                    
                     </ul>
                 </div>
             </div>
@@ -43,22 +49,25 @@
         </header>
         <!-- menu -->
         <main class="menu">
-
+           <div class="segundaSeccion">
+          <a name="techSpech"> <h2 class="titleSegundaSeccion"><span class="titleGrisDos">What's in the box</span> Tech Specs</h2></a> 
+               <a href="#"><img src="./Assets/What's in the box/Icons/switch/arrow-double.svg" alt="arrow bot"></a> 
+           </div>   
             <h2 class="titleProductos">Tech Specs</h2>
             <section class="descripcionArticulos">
 
-                <details open>
+                <details open class="listTech ordenUno">
                     <summary class="titleDesplegable">
-                        <h4>Front & rear lights</h4>
+                        <h4>Front &<br class="salto"> rear lights</h4>
 
                         <div class="iconos">
-                            <img src="./Assets/Tech specs/helmet.icon.svg" alt="">
-                            <img src="./Assets/Tech specs/chevron.svg" alt="">
+                            <img src="./Assets/Tech specs/helmet.icon.svg" alt="imagen casco">
+                            <img class="ocultarFlecha" src="./Assets/Tech specs/chevron.svg" alt=" flechaAbajo">
                         </div>
                     </summary>
                     <hr class="linea">
                     <p class="primerItem"><span class="negrita">Total output</span> +55 lumens</p>
-                    <p class="item"><span class="negrita">Weight</span> 580g *Medium size non-Mips</p>
+                    <p class="item"><span class="negrita">Weight</span><span class="ocultaFirstText"> 480g</span><span class="ocultaSecondText"> 580g *Medium size non-Mips</span></p>
                     <p class="item"><span class="negrita">Construction</span> ABS + PS shell + EPS liner</p>
                     <p class="item"><span class="negrita">Ventilation</span> Fixed (5 vents)</p>
                     <p class="item"><span class="negrita">Waterproofing</span> I-PX6</p>
@@ -66,13 +75,13 @@
                 </details>
 
 
-                <details open>
+                <details open class="listTech ordenDos">
                     <summary class="titleDesplegable">
-                        <h4>Companion App</h4>
+                        <h4>Compani<br class="salto">on App</h4>
 
                         <div class="iconos">
-                            <img src="./Assets/Tech specs/app.icon.svg" alt="">
-                            <img src="./Assets/Tech specs/chevron.svg" alt="">
+                            <img src="./Assets/Tech specs/app.icon.svg" alt="imagen celular">
+                            <img class="ocultarFlecha" src="./Assets/Tech specs/chevron.svg" alt="flechaAbajo">
                         </div>
                     </summary>
                     <hr class="linea">
@@ -85,30 +94,30 @@
                     <p class="item">Daily Challenges</p>
                 </details>
 
-                <details open>
+                <details open class="listTech ordenTres">
                     <summary class="titleDesplegable">
                         <h4>Navigation remote</h4>
 
                         <div class="iconos">
-                            <img src="./Assets/Tech specs/nav-remote.icon.svg" alt="">
-                            <img src="./Assets/Tech specs/chevron.svg" alt="">
+                            <img src="./Assets/Tech specs/nav-remote.icon.svg" alt="imagen navegacion">
+                            <img class="ocultarFlecha" src="./Assets/Tech specs/chevron.svg" alt="flechaAbajo">
                         </div>
                     </summary>
                     <hr class="linea">
                     <p class="primerItem"><span class="negrita">Battery life</span> 30 hs of continued use</p>
-                    <p class="item"><span class="negrita">Battery type</span> Rechargeable Lithium-ion</p>
+                    <p class="item"><span class="negrita">Battery type</span> Rechargeable <br class="saltoText">Lithium-ion</p>
                     <p class="item"><span class="negrita">Charging</span> USB Type-C</p>
                     <p class="item"><span class="negrita">Dimensions</span> 34x34x46mm</p>
 
                 </details>
 
-                <details open>
+                <details open class="ordenCuatro">
                     <summary class="titleDesplegable">
                         <h4>Battery</h4>
 
                         <div class="iconos">
-                            <img src="./Assets/Tech specs/battery.icon.svg" alt="">
-                            <img src="./Assets/Tech specs/chevron.svg" alt="">
+                            <img src="./Assets/Tech specs/battery.icon.svg" alt="imagen bateria">
+                            <img class="ocultarFlecha" src="./Assets/Tech specs/chevron.svg" alt="flechaAbajo">
                         </div>
                     </summary>
                     <hr class="linea">

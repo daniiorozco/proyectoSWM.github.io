@@ -64,7 +64,26 @@
                         .titleGris {
                             padding-left: 1.25rem;
                             color: #C5C5C7;
+
+                            /* desktop */
+                            @media(min-width: 1069px) {
+
+                                padding-left: 32px;
+
+                            }
+
                         }
+
+                        /* desktop */
+                        @media(min-width: 1069px) {
+                            font-size: 32px;
+                        }
+                    }
+
+                    /* 2tablet */
+                    @media(min-width:1068px) {
+                        margin: 2.5rem 0 2.5rem 0;
+
                     }
                 }
 
@@ -74,8 +93,20 @@
                     justify-content: center;
                     width: 345px;
                     height: 330px;
-                    padding: 20px 0 40px 0px;
-                    
+                    padding: 10px 0 40px 0px;
+
+
+                  /*   @media(max-width:1069px){
+                        .listArticleOculto{
+                           
+                        }
+                    } */
+                    /* Desktop */
+                   @media(min-width:1069px){
+                         width: 520px;
+                         height: 430px;
+                   }
+
                 }
 
                 .listArticle ul {
@@ -84,10 +115,50 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
+                     a{
+                         text-decoration: none;
+                         color: #1D1D1F;
+                     }
+
+                    .article {
+                        display: flex;
+                        align-items: center;
+
+                        .campoProd {
+                            margin-left: 20px;
+
+                        }
+
+                        /* iconos */
+                        .imgProducto {
+                            padding: 8px;
+                            border: 2px solid #c5c5c7;
+                            border-radius: 50%;
+                        }
+                    }
+
+
+
                 }
 
-                
+                /* oculto texto a partir de 735 */
+                .introTexto {
+                    display: none;
+                }
+
+
             }
+            /* Desktop */
+            @media(min-width:1069px){
+                height: 620px;
+            }
+
+            /* Desktop2 image */
+            @media(min-width:1440px) {
+                background-size: 100%;
+                height: 600px;
+            }
+
 
             @media(max-width:735px) {
                 .secondTitle {
@@ -145,10 +216,29 @@
             flex-direction: column;
             align-items: center;
             width: 695px;
+            height: 619px;
             padding: 0 20px 0 20px;
             margin: 0 auto;
         }
 
+        /* header tablet2 */
+        @media(min-width:1068px) {
+            width: 810px;
+            height: 545px;
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+
+        /* desktop */
+        @media(min-width:1069px) {
+            width: 1029px;
+            height: 627px;
+        }
+
+        /* Desktop2 */
+        @media(min-width:1440px) {
+            width: 1140px;
+        }
     }
 
     /* ----------------menu ----------------------*/
@@ -160,6 +250,67 @@
         margin-bottom: 3.75rem;
         color: #1D1D1F;
 
+        /* mobile */
+        @media(max-width:735px) {
+            .segundaSeccion {
+                display: none;
+            }
+        }
+
+        /* tablet */
+        @media(min-width:735px) {
+            width: 695px;
+            margin: 0 auto;
+            padding: 0 20px 0 20px;
+            margin-bottom: 80px;
+
+            /* tablet2 */
+            @media(min-width:1068px) {
+                width: 810px;
+                height: 418px;
+            }
+
+          
+
+            .segundaSeccion {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: 40px 0 40px 0;
+
+                .titleSegundaSeccion {
+                    font-size: 28px;
+
+                    .titleGrisDos {
+                        padding-right: 1.25rem;
+                        color: #C5C5C7;
+
+                        /* Desktop */
+                        @media(min-width:1069px) {
+                            padding-right: 2rem;
+                        }
+                    }
+
+                    /* Desktop */
+                    @media(min-width:1069px) {
+                        font-size: 30px;
+                    }
+                }
+
+
+            }
+        }
+
+        /* Desktop */
+        @media(min-width:1069px) {
+            width: 1029px;
+
+        }
+          /* Desptop2 */
+          @media(min-width:1440px) {
+            width: 1140px;
+        }
+
         /* --titulo-- */
         .titleProductos {
             margin: 3.75rem 0 2.5rem 0;
@@ -168,6 +319,16 @@
             font-weight: 700;
             letter-spacing: -2%;
             color: #1D1D1F;
+
+        }
+
+        @media(min-width:735px) {
+            .titleProductos {
+                display: none;
+                /*  margin-top: 40px;
+                font-size: 28px; */
+            }
+
         }
 
         /*--- section ----*/
@@ -176,14 +337,66 @@
             flex-direction: column;
             width: 85%;
 
+            /* mobile */
             @media (min-width:734px) {
                 width: 424px;
+            }
+
+            /* empiezo tablet */
+            @media(min-width:735px) {
+                width: 100%;
+                justify-content: center;
+                flex-direction: row;
             }
 
             details {
                 padding-bottom: 1.5rem;
 
+                /* mobile */
+                @media (max-width:735px) {
+                    .ocultaFirstText {
+                        display: none;
+                    }
 
+                    .saltoText {
+                        display: none;
+
+
+                    }
+                }
+
+
+                /* tablet */
+                @media(min-width:735px) {
+                    width: 149.75px;
+                    height: 354px;
+                    padding-bottom: 0;
+
+                    .ocultaSecondText {
+                        display: none;
+                    }
+                }
+
+                /* 2tablet */
+                @media(min-width:1068px) {
+                    width: 178.5px;
+
+
+                    .saltoText {
+                        display: none;
+                    }
+
+                }
+
+                /* Desktop */
+                @media(min-width:1069px) {
+                    width: 227.25px;
+                }
+
+                /* Desktop2 */
+                @media(min-width:1440px){
+                      width: 255px;
+                }
 
                 summary {
                     display: flex;
@@ -193,6 +406,26 @@
                         display: flex;
                         justify-content: space-between;
                         width: 50px;
+
+                        /* tablet */
+                        @media(min-width: 735px) {
+                            .ocultarFlecha {
+                                display: none;
+                            }
+
+                            img {
+                                width: 24px;
+
+                            }
+
+                        }
+                    }
+
+                    /* tablet */
+                    @media(min-width:735px) {
+                        .iconos {
+                            justify-content: flex-end;
+                        }
                     }
                 }
 
@@ -202,7 +435,32 @@
                     justify-content: space-between;
                     font-weight: 500px;
 
+                    /* tablet */
+                    @media(min-width: 735px) {
+                        padding-bottom: 10px;
+                        font-size: 20px;
+                    }
 
+                    /* mobile */
+                    @media(max-width:735px) {
+
+                        .salto {
+                            display: none;
+                        }
+                    }
+
+                    /* tablet2 */
+                    @media(min-width:1068px) {
+                        .salto {
+                            display: none;
+                        }
+                    }
+
+                    /* Desktop */
+                    @media(min-width:1069px) {
+
+                        padding-bottom: 12px;
+                    }
                 }
 
                 .linea {
@@ -212,14 +470,33 @@
                 p {
                     font-size: 12px;
 
+                    /* tablet */
+                    @media(min-width: 735px) {
+                        font-size: 15px;
+                    }
                 }
 
                 .primerItem {
                     padding: 1rem 0 0.5rem 0;
+
+                    /* tablet */
+                    @media(min-width: 735px) {
+                        padding-top: 20px;
+                    }
+
+                    /* Desktop */
+                    @media(min-width:1069px) {
+                        padding: 1.5rem 0 0.75rem 0;
+                    }
                 }
 
                 .item {
                     padding-bottom: 0.5rem;
+
+                    /* Desktop */
+                    @media(min-width:1069px) {
+                        padding-bottom: 0.75rem;
+                    }
                 }
 
                 .negrita {
@@ -229,7 +506,33 @@
 
             }
 
+            /* tablet */
+            @media(min-width:735px) {
+                .listTech {
+                    margin-right: 32px;
 
+                    /* Desktop */
+                    @media(min-width:1069px) {
+                        margin-right: 40px;
+                    }
+                }
+
+                .ordenUno {
+                    order: 1;
+                }
+
+                .ordenDos {
+                    order: 3;
+                }
+
+                .ordenTres {
+                    order: 2;
+                }
+
+                .ordenCuatro {
+                    order: 4;
+                }
+            }
 
 
 
