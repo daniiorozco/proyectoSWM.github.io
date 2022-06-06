@@ -8,35 +8,43 @@
     <link href="https://api.fontshare.com/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
     <!-- estilos -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- tailwind -->
+   <!--  <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <title>Proyecto</title>
 </head>
 
 <body>
     <div class="contain">
         <!-- cabecera -->
+      
         <header class="cabecera">
             <h1 class="title">What's in the box</h1>
             <div class="image">
                 <div class="secondTitle">
-                  <a name="whatsinthebox"><h1 class="titleTwo">What's in the box <span class="titleGris">Tech Specs</span></h1></a>  
-                       <a href="#techSpech"><img src="./Assets/What's in the box/Icons/switch/arrow-double.svg" alt="arrow bot"></a>     
+                 <h1 class="titleTwo">What's in the box <span class="titleGris">Tech Specs</span></h1> 
+                      <img src="./Assets/What's in the box/Icons/switch/arrow-double.svg" alt="arrow bot"  onclick="vista()">     
                 </div>
                <!-- lista -->
                 <div class="listArticle">
                     <ul>
                         <div class="contineLista">
                     <div class="listArticlecontain">
-                        <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/faro.fill.svg" alt="imagen casco"><a href="#techSpech"><li class="campoProd"> FARO Helmet</li></a> </div>  
-                        <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/umanual.filll.svg" alt="imagen manual"><a href="#techSpech"> <li class="campoProd"> User manual</li></a></div>   
+                        <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/faro.fill.svg" alt="imagen casco"><li class="campoProd" onclick="vista()"> FARO Helmet</li> </div>  
+                        <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/umanual.filll.svg" alt="imagen manual"> <li class="campoProd" onclick="vista()""> User manual</li></div>   
                     </div>
                                                                          
                        
                        <div class="listArticlecontain rigth">
-                        <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/navremote.fill.svg" alt="imagen navegacion"><a href="#techSpech"><li class="campoProd"> Navigation Remote</li></a> </div> 
-                       <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/rubberbands.fill.svg" alt="imagen rubberbands"><a href="#techSpech"> <li class="campoProd"> Rubber bands</li></a></div>
+                        <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/navremote.fill.svg" alt="imagen navegacion"><li class="campoProd" onclick="vista()""> Navigation Remote</li> </div> 
+                       <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/rubberbands.fill.svg" alt="imagen rubberbands"> <li class="campoProd" onclick="vista()""> Rubber bands</li></div>
                      </div> 
                     </div>                     
-                       <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/usb-c.fill.svg" alt="imagen usb"><a href="#techSpech"><li class="campoProd"> USB Type-C Charging Cable</li></a> </div>  
+                       <div class="article"><img class="imgProducto" src="./Assets/What's in the box/Icons/usb-c.fill.svg" alt="imagen usb"><li class="campoProd" onclick="vista()"> USB Type-C Charging Cable</li> </div>  
                     
                     </ul>
                 </div>
@@ -51,10 +59,10 @@
 
         </header>
         <!-- menu -->
-        <main class="menu">
+        <main class="menu"  >
            <div class="segundaSeccion">
-          <a name="techSpech"> <h2 class="titleSegundaSeccion"><span class="titleGrisDos">What's in the box</span> Tech Specs</h2></a> 
-               <a href="#"><img src="./Assets/What's in the box/Icons/switch/arrow-double.svg" alt="arrow bot"></a> 
+          <h2 class="titleSegundaSeccion"><span class="titleGrisDos">What's in the box</span> Tech Specs</h2> 
+             <img src="./Assets/What's in the box/Icons/switch/arrow-double.svg" alt="arrow bot" onclick="vista()">
            </div>   
             <h2 class="titleProductos">Tech Specs</h2>
             <section class="descripcionArticulos">
@@ -139,6 +147,8 @@
 
         
     </div>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>

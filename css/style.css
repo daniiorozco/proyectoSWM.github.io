@@ -190,6 +190,7 @@
         display: none; } }
     @media (min-width: 735px) {
       .contain .menu {
+        display: none;
         width: 695px;
         margin: 0 auto;
         padding: 0 20px 0 20px;
