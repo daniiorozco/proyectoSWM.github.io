@@ -46,6 +46,14 @@
                 background-repeat: no-repeat;
                 background-position: center;
 
+
+                /* checkIcono */
+
+
+               
+
+
+
                 .secondTitle {
                     display: flex;
                     justify-content: space-between;
@@ -147,18 +155,45 @@
                             padding: 8px;
                             border: 2px solid #c5c5c7;
                             border-radius: 50%;
-                        }
-                    }
 
+
+                            /* no terminado */
+                            &:hover {
+                                background-color: #fff;
+
+                                path {
+                                    fill: #ff5640
+                                }
+
+                            }
+                        }
+
+                    }
+                   
 
 
                 }
+
 
                 /* oculto texto a partir de 735 */
                 .introTexto {
                     display: none;
                 }
 
+                .imgCheck {
+                    /*  display: none; */
+                    position: relative;
+                    float: right;
+                    padding: 8px;
+                   /*  border: 2px solid #c5c5c7; */
+                    border-radius: 50%;
+                    background-color: #ff5640;
+                    z-index: 1;
+                   
+
+                   
+
+                }
 
             }
 
@@ -182,6 +217,10 @@
                 .listArticle {
                     display: none;
                 }
+
+                /* .imgCheck {
+                    display: none;
+                } */
             }
 
         }
@@ -257,7 +296,7 @@
 
     /* ----------------menu ----------------------*/
     .menu {
-        
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -267,14 +306,15 @@
 
         /* mobile */
         @media(max-width:735px) {
-        .segundaSeccion {
+            .segundaSeccion {
                 display: none;
-            } 
-            
+            }
+
         }
 
         /* tablet */
         @media(min-width:735px) {
+            display: none;
             width: 695px;
             margin: 0 auto;
             padding: 0 20px 0 20px;
@@ -342,7 +382,7 @@
         @media(min-width:735px) {
             .titleProductos {
                 display: none;
-               
+
             }
 
         }
@@ -352,7 +392,7 @@
             display: flex;
             flex-direction: column;
             width: 85%;
-        
+
 
             /* mobile */
             @media (min-width:734px) {
@@ -559,3 +599,4 @@
 
 
 }
+
